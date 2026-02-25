@@ -3,9 +3,9 @@
 # definition de l'environnement numérique.
 getwd()
 
-setwd("C:/Users/TCHEUMENI/Desktop/LOGICIEL R/STAT DE BASE/TEST STAT DE BASE")
+setwd("C:/Users/Desktop/LOGICIEL R/STAT DE BASE/TEST STAT DE BASE")
 
-ret <- read.csv2("C:/Users/TCHEUMENI/Desktop/LOGICIEL R/STAT DE BASE/presentationTPretinol.csv")
+ret <- read.csv2("C:/Users/Desktop/LOGICIEL R/STAT DE BASE/presentationTPretinol.csv")
 
 
 ## explorations des variables
@@ -262,6 +262,7 @@ fop <- function(x){
 t.test(ret$age[ret$sexe.b == Masculin], ret$age[ret$sexe.b == Féminin])
 
 with(ret, t.test(age[sexe.b == Masculin], age[sexe.b == Féminin]))
+
 
 
 
